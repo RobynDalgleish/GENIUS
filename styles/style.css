@@ -4,5 +4,6 @@ header {
 body {
   background: red; }
 
-body {
-  background: red; }
+img {
+  display: block;
+  max-width: 100%; }

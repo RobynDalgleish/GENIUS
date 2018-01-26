@@ -1,6 +1,11 @@
 @import "components/header";
 @import "components/footer";
 
-body {
-    background: red;
-}
+
+// for responsive typography
+$type: calc(1.6rem + (3 - 1.6) * ((100vw - 300px) / (1600 - 300)));
+
+// for the figure gallery images
+img {
+      display: block;
+      max-width: 100%; }
