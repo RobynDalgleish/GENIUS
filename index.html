@@ -1,43 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script defer src='https://use.fontawesome.com/releases/v5.0.4/js/all.js'></script>
+<!-- Below is for the favicon. I made this into a snippet as well. Use 'favicon' + tab' -->
     <link type="image/png" href="assets/logo.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:100,300,400,700,900" rel="stylesheet">
+
     <title>GENIUS</title>
 </head>
+
 <body>
+<!-- HEADER BEGINS -->
+    <header>
 
-    <!-- for the 4x2 figure gallery -->
+        <section class="header_top">
+            <div class="wrapper">
 
-    <ul>
-        <li>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                </figcaption>
-            </figure>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                </figcaption>
-            </figure>
-        </li>
-    </ul>
+                <div class="header_top_contact">
+                    <ul>
+                        <!-- are before/after elements or styled list bullets better than icons to use below? should the icons be described for accessibility? Should there be a p tag after the icon? -->
+                        <li><a href="tel:+1-541-754-3031"><i class="fas fa-phone" data-fa-transform="rotate-90" style="color:rgb(113, 199, 59)"></i>(541) 754-3010</a></li>
+                        <li><a href="mailto:contact@com.vn"><i class="far fa-envelope" style="color:rgb(113, 199, 59)"></i>contact@com.vn</a></li>
+                    </ul>
+                </div>
+                <h2>
+                    <img src="assets/logoFull.png" alt="The GENIUS logo">
+                </h2>
+                <div class="header_top_enter">
+                    <!-- would a buttom be more accessible for the two a tags below? -->
+                    <a href="">register</a>
+                    <!-- use a before/after element to make the virtical line here a:after{content: |;} -->
+                    <div></div>
+                    <a href="">login</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="header_bottom">
+            <div class="wrapper">
+
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="">home</a></li>
+                        <li><a href="">pages</a></li>
+                        <li><a href="">courses</a></li>
+                        <li><a href="">featured</a></li>
+                        <li><a href="">shop</a></li>
+                        <li><a href="">news</a></li>
+                        <li><a href="">events</a></li>
+                        <li><a href=""><i class="fas fa-shopping-cart" style="color:rgb(113, 199, 59)"></i></a></li>
+                        <li class="dropdown">
+                            <input type="checkbox" id="checkbox-toggle">
+                            <label for="checkbox-toggle"><span class="visuallyhidden">search</span><i class="fas fa-search"></i></label>
+                                <ul class="search_ul">
+                                    <li><input type="text" name="search" placeholder="search..."></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        <section>
+
+    </header>
+<!-- HEADER ENDS -->
+
+<!-- SPLASH SECTION BEGINS -->
+    <main>
+
+        <section class="splash">
+                <div class="wrapper">
+                    <h1>developping skills</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempore cum dolores, officiis eaque asperiores necessitatibus deleniti, harum quidem mollitia accusamus consequatur totam ex, inventore amet veritatis rerum dolor nesciunt?</p>
+                    <a href=""><button>start learning now!</button></a>
+                </div>
+        </section>
+<!-- SPLASH SECTION ENDS -->
+
+<!-- TRENDING COURSES BEGINS -->
+        <section>
+            <div class="wrapper">
+
+                <div>
+                    <p>touch them if you want to</p>
+                    <h2>trending courses</h2>
+                    <div class="magazine">
+                        <img src="assets/open-magazine.png" alt="icon of an open magazine">
+                    </div>
+                </div>
+
+                <nav class="trending_nav">
+                    <ul>
+                        <li><a href="">all</a></li>
+                        <li><a href="">film</a></li>
+                        <li><a href="">music</a></li>
+                        <li><a href="">photography</a></li>
+                        <li><a href="">design</a></li>
+                        <li><a href="">business</a></li>
+                    </ul>
+                </nav>
+<!-- I made the below ul and it's contents a snippet for easy access to modules that build responsive image and caption/overlay galleries. Use 'figCapModule + tab' -->
+                <div class="courses">
+
+                    <ul>
+                        <li>
+
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <!-- below h5 tags can neither be uppercase or capitalize in css. So write it as is? -->
+                                    <h3>Course in Expert bartender and modern cocktail</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>clive bradley</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <h3>Fashion Styling and Photography course</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>cedric chapman</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <h3>Management Developpment Program</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>chad cecil</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <h3>Learn English with websites</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>henry cary</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <h3>Digital Graphic Design Fundamentals</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>bowen brent</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <h3>Fashion &amp; Luxury Goods Management Course</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>bruce axel</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <h3>Write Professional Emails in English</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>arvel baird</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>
+                                    <h3>Master Class - Digital Acceleration Course</h3>
+                                    <div>
+                                        <div class="course_instructor_photo"></div>
+                                        <div class="course_instructor">
+                                            <p>aubrey austin</p>
+                                            <a href="">view profile</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
+                                            <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
+                                        </ul>
+                                        <p class="courses_cost">free</p>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+            
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+<!-- TRENDING COURSES ENDS -->
+
+<!-- PHOTO GALLERY BEGINS -->
+        <section>
+            <div class="wrapper">
+
+                <div>
+                    <p>lorem ipsum dolor</p>
+                    <h2>see photo gallery</h2>
+                    <!-- describe magazine icon? -->
+                    <div class="magazine">
+                        <img src="assets/open-magazine.png" alt="icon of an open magazine">
+                    </div>
+                </div>
+
+                <div class="photo_gallery">
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <!-- is it semantically correct to have a + in the figcaption? -->
+                                <figcaption>+</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>+</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>+</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>+</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>+</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="" alt="">
+                                <figcaption>+</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+<!-- PHOTO GALLERY ENDS -->
+
+<!-- NEWS BEGINS -->
+        <section>
+            <div class="wrapper">
+                
+                <div>
+                    <p>lorem ipsum dolor</p>
+                    <h2>latest news</h2>
+                    <div class="magazine">
+                        <img src="assets/open-magazine.png" alt="icon of an open magazine">
+                    </div>
+                </div>
+
+                <article>
+                    <img src="" alt="">
+                    <div>
+                        <h3>Course in Digital Photography and Photoshop</h3>
+                        <div>
+                            <p>by admin</p>
+                            <time datetime="2017-10-11">Oct 11, 2017</time>
+                        </div>
+                        <div>
+                            <a><i class="fas fa-user" style="color:rgb(102, 102, 102)"></i>703</a>
+                            <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam debitis perspiciatis praesentium enim sapiente ex tenetur ipsa voluptatibus suscipit ab sed nemo velit, aut culpa, est maiores vitae laudantium neque inventore atque dolorum! Alias eius adipisci eos quisquam modi doloremque velit! Voluptates eos nemo beatae culpa doloremque, odit numquam.</p>
+                        <button>learn more</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div>
+                        <h3>Short Courses in Marketing</h3>
+                        <div>
+                            <p>by admin</p>
+                            <time datetime="2017-10-11">Oct 11, 2017</time>
+                        </div>
+                        <div>
+                            <a><i class="fas fa-user" style="color:rgb(102, 102, 102)"></i>703</a>
+                            <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam debitis perspiciatis praesentium enim sapiente ex tenetur ipsa voluptatibus suscipit ab sed nemo velit, aut culpa, est maiores vitae laudantium neque inventore atque dolorum! Alias eius adipisci eos quisquam modi doloremque velit! Voluptates eos nemo beatae culpa doloremque, odit numquam.</p>
+                        <button>learn more</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="" alt="">
+                    <div>
+                        <h3>Award in Education and Training</h3>
+                        <div>
+                            <p>by admin</p>
+                            <time datetime="2017-10-11">Oct 11, 2017</time>
+                        </div>
+                        <div>
+                            <a><i class="fas fa-user" style="color:rgb(102, 102, 102)"></i>703</a>
+                            <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam debitis perspiciatis praesentium enim sapiente ex tenetur ipsa voluptatibus suscipit ab sed nemo velit, aut culpa, est maiores vitae laudantium neque inventore atque dolorum! Alias eius adipisci eos quisquam modi doloremque velit! Voluptates eos nemo beatae culpa doloremque, odit numquam.</p>
+                        <button>learn more</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+<!-- NEWS ENDS -->
+
+<!-- WHAT MAKES US DIFFERENT BEGINS -->
+        <section>
+            <div class="wrapper">
+                <div>
+                    <p>Lorem ipsum dolor</p>
+                    <h2>what makes us different</h2>
+                    <div class="magazine">
+                        <img src="assets/open-magazine.png" alt="icon of an open magazine">
+                    </div>
+                </div>
+
+                <!-- set div containing image to height 100%, not image. -->
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <h3>concept</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit quo similique hic?</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <h3>experience</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit
+                    quo similique hic?</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <h3>design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit
+                    quo similique hic?</p>
+                </div>
+            </div>
+        </section>
+<!-- WHAT MAKES US DIFFERENT ENDS -->
+
+<!-- BEST PRICING BEGINS -->
+        <section>
+            <div class="wrapper">
+                <div>
+                    <p>chooses your pricing</p>
+                    <h2>the best pricing we offered</h2>
+                    <div class="magazine">
+                        <img src="assets/open-magazine.png" alt="icon of an open magazine">
+                    </div>
+                </div>
+            <!-- use before element for the $s below -->
+                <div>
+                    <div>
+                        <p>0</p>
+                    </div>
+                    <h3>trial</h3>
+                    <p>30 days free trial</p>
+                    <div>
+                        <ul>
+                            <li>one day free trial</li>
+                            <li>limited courses</li>
+                            <li>free 3 lessons</li>
+                            <li>no supporter</li>
+                            <li>no ebook</li>
+                            <li>no tutorial</li>
+                            <li>limited registered user</li>
+                        </ul>
+                    </div>
+                    <button>choose plan</button>
+                </div>
+
+                <div>
+                    <div>
+                        <p>55</p>
+                    </div>
+                    <h3>trial</h3>
+                    <p>30 days free trial</p>
+                    <div>
+                        <ul>
+                            <li>one day standard access</li>
+                            <li>limited courses</li>
+                            <li>300+ lessons</li>
+                            <li>random supporter</li>
+                            <li>view only ebook</li>
+                            <li>standard tutorials</li>
+                            <li>unlimited registered user</li>
+                        </ul>
+                    </div>
+                    <button>choose plan</button>
+                </div>
+
+                <div>
+                    <div>
+                        <p>55</p>
+                    </div>
+                    <h3>trial</h3>
+                    <p>30 days free trial</p>
+                    <div>
+                        <ul>
+                            <li>lifetime access</li>
+                            <li>unlimited all courses</li>
+                            <li>3000+ lessons and growing</li>
+                            <li>free supporter</li>
+                            <li>free ebook downloads</li>
+                            <li>premium tutorials</li>
+                            <li>unlimited registered user</li>
+                        </ul>
+                    </div>
+                    <button>choose plan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <section>
+            <div class="wrapper">
+                <div>
+                    <h2>
+                        <img src="logoFull.png" alt="the GENIUS logo">
+                    <h2>
+                    <!-- use the first word selector to turn the first word green -->
+                    <p>genius provides broad range of learning programs and activities that's unique in itself</p>
+                    <ul>
+                        <li><i class="fas fa-check" style="color:rgb(113, 199, 59)"></i>Mountain Trekking Programs</li>
+                        <li><i class="fas fa-check" style="color:rgb(113, 199, 59)"></i>Inter School Competitions</li>
+                        <li><i class="fas fa-check" style="color:rgb(113, 199, 59)"></i>Awards and ceremony</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>courses</h2>
+                    <ul>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>courses</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>events</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>gallery</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>FAQs</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>blog</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>contact us</h2>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt" style="color:rgb(113, 199, 59)"></i>Hawkins DDR 837</a></li>
+                        <li><a href=""><i class="fas fa-map-marker-alt" style="color:rgb(113, 199, 59)"></i>Drake APA 159</a></li>
+                        <li><a href=""><i class="fas fa-map-marker-alt" style="color:rgb(113, 199, 59)"></i>Yosemite AD 19</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="tel:+1-817-929-3756"><i class="fas fa-phone-square" data-fa-transform="rotate-90" style="color:rgb(134, 188, 66)"></i>817 929 3756</a></li>
+                        <li><a href="mailto:contact@com.vn"><i class="fas fa-envelope" style="color:rgb(113, 199, 59)"></i>contact@com.vn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>newsletters</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, reiciendis!</p>
+                    <form id="subscribe">
+                        <label for="emailAddress" class="visuallyhidden">enter your email address</label>
+                        <input type="email" name="emailAddress" placeholder="enter your email">
+                        <button type="submit" form="subscribe" value="Submit">
+                            <i class="fas fa-paper-plane" style="color:rgb(113, 199, 59)"></i>
+                        </button>
+                    </form>
+                    <p>we respect your privacy</p>
+                    <nav>
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-square" style="color:rgb(59, 89, 152)"></i><span class="visuallyhidden">facebook</span></a></li>
+                            <li><a href=""><i class="fab fa-twitter-square" style="color: rgb(2, 170, 240)"></i><span class="visuallyhidden">twitter</span></a></li>
+                            <li><a href=""><i class="fab fa-google-plus-square" style="color: rgb(224, 47, 47)"></i><span class="visuallyhidden">google+</span></a></li>
+                            <li><a href=""><i class="fab fa-instagram" style="color: rgb(86, 61, 53)"></i><span class="visuallyhidden">instagram</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li>home</li>
+                        <li>pages</li>
+                        <li>courses</li>
+                        <li>news</li>
+                        <li>events</li>
+                    </ul>
+                </nav>
+                <div>
+                    <p>copyright</p>
+                    <p>&copy;2017</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
 </body>
 </html>
 
-<i class="fas fa-phone" data-fa-transform="rotate-90" style="color:rgb(134, 188, 66)"></i>
-<i class="far fa-envelope" style="color:rgb(134, 188, 66)"></i>
-<i class="fas fa-shopping-cart" style="color:rgb(134, 188, 66)"></i>
-<i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>
-<i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>
-<i class="fas fa-user" style="color:rgb(102, 102, 102)"></i>
-<i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>
+<!-- When using an SVG, how do I credit, and how do I size it? Below:
+
+    <svg class="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100"
+    style="enable-background:new 0 0 100 100;" xml:space="preserve">
+    <path d="M80.1,5.5H19.9C11.7,5.5,5,12.2,5,20.4v60.3c0,8.2,6.7,14.9,14.9,14.9h60.3c8.2,0,14.9-6.7,14.9-14.9V20.4  C95,12.2,88.3,5.5,80.1,5.5z M85.1,20.4v7.9c0,2.5-2,4.5-4.5,4.5h-8.3c-2.5,0-4.5-2-4.5-4.5V20c0-2.5,2-4.5,4.5-4.5h8.3  c2.5,0,4.5,2,4.5,4.5V20.4z M67.1,50.5c0,9.5-7.7,17.1-17.1,17.1c-9.5,0-17.1-7.7-17.1-17.1c0-9.4,7.7-17.1,17.1-17.1  C59.4,33.4,67.1,41,67.1,50.5z M80.1,85.6H19.9c-2.7,0-5-2.2-5-5V41.3h9.6c-1,2.9-1.6,5.9-1.6,9.2c0,14.9,12.1,27,27.1,27  c14.9,0,27-12.1,27-27c0-3.2-0.6-6.3-1.6-9.2h9.6v39.3C85.1,83.4,82.9,85.6,80.1,85.6z"/><span class="visuallyhidden">Created by Mikicon from the Noun Project</span>
+</svg> -->

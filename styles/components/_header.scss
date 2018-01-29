@@ -1,3 +1,86 @@
-header {
-    width: 50%;
+
+
+// for responsive typography
+// $type: calc(1.6rem + (3 - 1.6) * ((100vw - 300px) / (1600 - 300)));
+
+.header_top {
+    background: rgb(34, 34, 33);
 }
+
+.header_top .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    flex-shrink: 
+        h2 {
+            width: 33.33%;
+            text-align: center;
+        }
+}
+
+.header_top_contact {
+    font-family: Montserrat;
+    color: #F9F9F9;
+    font-weight: 100;
+    font-size: .6rem;
+    width: 33.33%;
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+                li {
+                    padding-right: 30px;
+                }
+        }
+}
+
+.header_top_enter {
+    font-family: Raleway;
+    color: #F9F9F9;
+    font-weight: 100;
+    font-size: .6rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 33.33%;
+         div {
+            height: 15px;
+            width: 0px;
+            border: 1px solid #F9F9F9;
+            margin: 0 20px 0 20px;
+         }
+}
+
+.header_nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Raleway;
+    color:#212121;
+    font-weight: 700;
+        li {
+            padding: 0 10px 0 10px;
+        }
+}
+
+// drop-down search field begins
+input[type=checkbox]{
+    display: none;
+}
+
+.search_ul {
+      display: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+    display: block;
+}
+
+li {
+      list-style: none;
+}
+// drop-down search field ends
