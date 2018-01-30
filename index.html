@@ -22,20 +22,20 @@
             <div class="wrapper">
 
                 <div class="header_top_contact">
-                    <ul>
+                    <ul class="header_top_contact_items">
                         <!-- are before/after elements or styled list bullets better than icons to use below? should the icons be described for accessibility? Should there be a p tag after the icon? -->
-                        <li><a href="tel:+1-541-754-3031"><i class="fas fa-phone" data-fa-transform="rotate-90" style="color:rgb(113, 199, 59)"></i>(541) 754-3010</a></li>
-                        <li><a href="mailto:contact@com.vn"><i class="far fa-envelope" style="color:rgb(113, 199, 59)"></i>contact@com.vn</a></li>
+                        <li class="header_top_contact_item"><a href="tel:+1-541-754-3031"><i class="fas fa-phone" data-fa-transform="rotate-90" style="color:rgb(113, 199, 59)"></i>(541) 754-3010</a></li>
+                        <li class="header_top_contact_item"><a href="mailto:contact@com.vn"><i class="far fa-envelope" style="color:rgb(113, 199, 59)"></i>contact@com.vn</a></li>
                     </ul>
                 </div>
-                <h2>
-                    <img src="assets/logoFull.png" alt="The GENIUS logo">
+                <h2 class="header_top_genius_logo">
+                    <img class="header_top_genius_logo_image" src="assets/logoFull.png" alt="The GENIUS logo">
                 </h2>
                 <div class="header_top_enter">
                     <!-- would a buttom be more accessible for the two a tags below? -->
                     <a href="">register</a>
                     <!-- use a before/after element to make the virtical line here a:after{content: |;} -->
-                    <div></div>
+                    <div>|</div>
                     <a href="">login</a>
                 </div>
 
@@ -46,7 +46,7 @@
             <div class="wrapper">
 
                 <nav class="header_nav">
-                    <ul>
+                    <ul class="header_nav_items">
                         <li><a href="">home</a></li>
                         <li><a href="">pages</a></li>
                         <li><a href="">courses</a></li>
@@ -56,11 +56,14 @@
                         <li><a href="">events</a></li>
                         <li><a href=""><i class="fas fa-shopping-cart" style="color:rgb(113, 199, 59)"></i></a></li>
                         <li class="dropdown">
+                            <form>
                             <input type="checkbox" id="checkbox-toggle">
                             <label for="checkbox-toggle"><span class="visuallyhidden">search</span><i class="fas fa-search"></i></label>
                                 <ul class="search_ul">
                                     <li><input type="text" name="search" placeholder="search..."></li>
                                 </ul>
+                            </form>
+                            
                         </li>
                     </ul>
                 </nav>
@@ -76,9 +79,9 @@
 
         <section class="splash">
                 <div class="wrapper">
-                    <h1>developping skills</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempore cum dolores, officiis eaque asperiores necessitatibus deleniti, harum quidem mollitia accusamus consequatur totam ex, inventore amet veritatis rerum dolor nesciunt?</p>
-                    <a href=""><button>start learning now!</button></a>
+                    <h1 class="splash_header" >developing skills</h1>
+                    <p class="splash_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempore cum dolores, officiis eaque asperiores necessitatibus deleniti, harum quidem mollitia accusamus consequatur totam ex, inventore amet veritatis rerum dolor nesciunt?</p>
+                    <a href=""><p>start learning now!</p></a>
                 </div>
         </section>
 <!-- SPLASH SECTION ENDS -->
@@ -87,7 +90,7 @@
         <section>
             <div class="wrapper">
 
-                <div>
+                <div class="section_title">
                     <p>touch them if you want to</p>
                     <h2>trending courses</h2>
                     <div class="magazine">
@@ -112,7 +115,7 @@
                         <li>
 
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/bethany-laird-407583.jpg" alt="">
                                 <figcaption>
                                     <!-- below h5 tags can neither be uppercase or capitalize in css. So write it as is? -->
                                     <h3>Course in Expert bartender and modern cocktail</h3>
@@ -136,7 +139,7 @@
 
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/clay-banks-258326.jpg" alt="">
                                 <figcaption>
                                     <h3>Fashion Styling and Photography course</h3>
                                     <div>
@@ -159,7 +162,7 @@
 
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/green-chameleon-21532.jpg" alt="">
                                 <figcaption>
                                     <h3>Management Developpment Program</h3>
                                     <div>
@@ -182,7 +185,7 @@
                         
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/toa-heftiba-95457.jpg" alt="">
                                 <figcaption>
                                     <h3>Learn English with websites</h3>
                                     <div>
@@ -205,7 +208,7 @@
 
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/helloquence-51716.jpg" alt="">
                                 <figcaption>
                                     <h3>Digital Graphic Design Fundamentals</h3>
                                     <div>
@@ -228,7 +231,7 @@
 
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/jacalyn-beales-369927.jpg" alt="">
                                 <figcaption>
                                     <h3>Fashion &amp; Luxury Goods Management Course</h3>
                                     <div>
@@ -251,7 +254,7 @@
                         
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/thought-catalog-354861.jpg" alt="">
                                 <figcaption>
                                     <h3>Write Professional Emails in English</h3>
                                     <div>
@@ -274,7 +277,7 @@
                         
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/brad-neathery-258926.jpg" alt="">
                                 <figcaption>
                                     <h3>Master Class - Digital Acceleration Course</h3>
                                     <div>
@@ -319,38 +322,38 @@
                     <ul>
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/bench-accounting-49027.jpg" alt="">
                                 <!-- is it semantically correct to have a + in the figcaption? -->
                                 <figcaption>+</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/kai-oberhauser-309715.jpg" alt="">
                                 <figcaption>+</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/kari-shea-199320.jpg" alt="">
                                 <figcaption>+</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/michal-grosicki-366026.jpg" alt="">
                                 <figcaption>+</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/gabriel-beaudry-253365.jpg" alt="">
                                 <figcaption>+</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="">
+                                <img src="assets/tim-gouw-69753.jpg" alt="">
                                 <figcaption>+</figcaption>
                             </figure>
                         </li>
@@ -374,7 +377,7 @@
                 </div>
 
                 <article>
-                    <img src="" alt="">
+                    <img src="assets/aleks-dorohovich-26.jpg" alt="">
                     <div>
                         <h3>Course in Digital Photography and Photoshop</h3>
                         <div>
@@ -386,12 +389,12 @@
                             <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam debitis perspiciatis praesentium enim sapiente ex tenetur ipsa voluptatibus suscipit ab sed nemo velit, aut culpa, est maiores vitae laudantium neque inventore atque dolorum! Alias eius adipisci eos quisquam modi doloremque velit! Voluptates eos nemo beatae culpa doloremque, odit numquam.</p>
-                        <button>learn more</button>
+                        <a href="">learn more</a>
                     </div>
                 </article>
 
                 <article>
-                    <img src="" alt="">
+                    <img src="assets/christelle-bourgeois-97331.jpg" alt="">
                     <div>
                         <h3>Short Courses in Marketing</h3>
                         <div>
@@ -403,12 +406,12 @@
                             <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam debitis perspiciatis praesentium enim sapiente ex tenetur ipsa voluptatibus suscipit ab sed nemo velit, aut culpa, est maiores vitae laudantium neque inventore atque dolorum! Alias eius adipisci eos quisquam modi doloremque velit! Voluptates eos nemo beatae culpa doloremque, odit numquam.</p>
-                        <button>learn more</button>
+                        <a href="">learn more</a>
                     </div>
                 </article>
 
                 <article>
-                    <img src="" alt="">
+                    <img src="assets/jessy-smith-500353.jpg" alt="">
                     <div>
                         <h3>Award in Education and Training</h3>
                         <div>
@@ -420,7 +423,7 @@
                             <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam debitis perspiciatis praesentium enim sapiente ex tenetur ipsa voluptatibus suscipit ab sed nemo velit, aut culpa, est maiores vitae laudantium neque inventore atque dolorum! Alias eius adipisci eos quisquam modi doloremque velit! Voluptates eos nemo beatae culpa doloremque, odit numquam.</p>
-                        <button>learn more</button>
+                        <a href="">learn more</a>
                     </div>
                 </article>
 
@@ -442,14 +445,14 @@
                 <!-- set div containing image to height 100%, not image. -->
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="assets/icon.png" alt="">
                     </div>
                     <h3>concept</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit quo similique hic?</p>
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="assets/test-tube.png" alt="">
                     </div>
                     <h3>experience</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit
@@ -457,7 +460,7 @@
                 </div>
                 <div>
                     <div>
-                        <img src="" alt="">
+                        <img src="assets/quality.png" alt="">
                     </div>
                     <h3>design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit
@@ -495,7 +498,7 @@
                             <li>limited registered user</li>
                         </ul>
                     </div>
-                    <button>choose plan</button>
+                    <a href="">choose plan</a>
                 </div>
 
                 <div>
@@ -515,7 +518,7 @@
                             <li>unlimited registered user</li>
                         </ul>
                     </div>
-                    <button>choose plan</button>
+                    <a href="">choose plan</a>
                 </div>
 
                 <div>
@@ -535,13 +538,14 @@
                             <li>unlimited registered user</li>
                         </ul>
                     </div>
-                    <button>choose plan</button>
+                    <a href="">choose plan</a>
                 </div>
             </div>
         </section>
     </main>
+<!-- BEST PRICING ENDS -->
 
-
+<!-- FOOTER BEGINS -->
     <footer>
         <section>
             <div class="wrapper">
@@ -576,7 +580,7 @@
                         <li><a href=""><i class="fas fa-map-marker-alt" style="color:rgb(113, 199, 59)"></i>Yosemite AD 19</a></li>
                     </ul>
                     <ul>
-                        <li><a href="tel:+1-817-929-3756"><i class="fas fa-phone-square" data-fa-transform="rotate-90" style="color:rgb(134, 188, 66)"></i>817 929 3756</a></li>
+                        <li><a href="tel:+1-817-929-3756"><i class="fas fa-phone-square" data-fa-transform="rotate-90" style="color:rgb(113, 199, 59)"></i>817 929 3756</a></li>
                         <li><a href="mailto:contact@com.vn"><i class="fas fa-envelope" style="color:rgb(113, 199, 59)"></i>contact@com.vn</a></li>
                     </ul>
                 </div>
@@ -620,6 +624,7 @@
             </div>
         </section>
     </footer>
+<!-- FOOTER ENDS -->
 
 </body>
 </html>

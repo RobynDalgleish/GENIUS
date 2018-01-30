@@ -1,0 +1,25 @@
+.section_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        p {
+            font-family: Raleway;
+            color:#222222;
+            font-size: 1.122rem;
+            font-weight: 400;
+            line-height: 1.337;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-family: Raleway;
+            color:#222222;
+            font-size: 2.242rem;
+            font-weight: 700;
+            line-height: 0.669;
+            text-align: center;
+            padding: 10px 0 30px 0;
+            text-transform: uppercase;
+        }
+    }
+

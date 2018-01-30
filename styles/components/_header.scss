@@ -12,11 +12,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-height: 70px;
-    flex-shrink: 
-        h2 {
-            width: 33.33%;
+        .header_top_genius_logo {
+            width: 30%;
             text-align: center;
+            padding: 10px 0 8px 0;
+                .header_top_genius_logo_image {
+                    height: 30px;
+                }
         }
 }
 
@@ -25,15 +27,19 @@
     color: #F9F9F9;
     font-weight: 100;
     font-size: .6rem;
-    width: 33.33%;
-        ul {
+    width: 35%;
+        .header_top_contact_items {
             display: flex;
             flex-direction: row;
             align-items: center;
-                li {
-                    padding-right: 30px;
+                .header_top_contact_item{
+                    padding-right: 40px;
                 }
         }
+}
+
+.header_top_contact svg {
+    margin-right: 10px;
 }
 
 .header_top_enter {
@@ -46,24 +52,23 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 33.33%;
+    width: 35%;
          div {
-            height: 15px;
-            width: 0px;
-            border: 1px solid #F9F9F9;
-            margin: 0 20px 0 20px;
+            padding: 0 20px 0 20px;
          }
 }
 
-.header_nav > ul {
+.header_nav > .header_nav_items {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size:.7rem;
+    text-transform: uppercase;
     font-family: Raleway;
     color:#212121;
     font-weight: 700;
         li {
-            padding: 0 10px 0 10px;
+            padding: 20px 15px 20px 15px;
         }
 }
 
@@ -84,3 +89,13 @@ li {
       list-style: none;
 }
 // drop-down search field ends
+
+.header_bottom {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
+    position: relative;
+    z-index: 100;
+}
+
+.search_ul:active {
+    width: 100%;
+}

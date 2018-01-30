@@ -1,9 +1,37 @@
 .splash {
     background-image: url(../assets/amy-hirschi-457525.jpg);
     background-size: cover;
-    height: 80vh;
-    min-height: 600x;
-    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+            .splash_header {
+                text-transform: uppercase;
+                font-weight: 900;
+                color: rgb(31, 38, 65);
+                font-size: 300%;
+                width: 50%;
+            }
 }
+
+.splash_description {
+    padding: 2vw 0 2vw 0;
+    line-height: 20pt;
+}
+
+.splash .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+    text-align: center;
+        a {
+            width: 200px;
+            height: 40px;
+            background-color: rgb(134, 188, 66);
+                p {
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+        }
+}
+
