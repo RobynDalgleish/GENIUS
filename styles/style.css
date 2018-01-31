@@ -478,7 +478,7 @@ li {
   width: 50%; }
   .news_article_details > a {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 13px;
     display: block;
     height: 44px;
     width: 151px;
@@ -637,6 +637,11 @@ li {
     transition: all .3s; }
     .plans .plan:hover {
       background-color: #86bc42; }
+      .plans .plan:hover .price {
+        background-color: #86bc42;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.25);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.25);
+        color: white; }
     .plans .plan h3 {
       color: #444444;
       font-size: 1.5rem;
@@ -658,11 +663,15 @@ li {
       height: 120px;
       width: 120px;
       border-radius: 50%;
-      border: 5px solid #ffffff;
+      border: 10px solid #ffffff;
       background-color: #f0f2f7;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      color: #222222;
+      font-size: 2.375rem;
+      font-weight: 700;
+      line-height: 0.947; }
     .plans .plan .plan_details {
       background-color: #ffffff;
       color: #444444;
@@ -674,6 +683,29 @@ li {
     .plans .plan p {
       margin: auto;
       padding-bottom: 30px; }
+
+.price {
+  color: #222222;
+  font-size: 2.375rem;
+  font-weight: 700;
+  line-height: 0.947;
+  text-align: center;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .price p {
+    padding-top: 30px;
+    padding-left: 10px; }
+
+.price:before {
+  content: "$";
+  position: absolute;
+  font-size: 1.5rem;
+  left: 20px;
+  top: 20px; }
+
+.prices .section_title {
+  padding-bottom: 120px; }
 
 footer {
   background-color: #252525;
