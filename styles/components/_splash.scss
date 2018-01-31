@@ -1,37 +1,57 @@
 .splash {
     background-image: url(../assets/amy-hirschi-457525.jpg);
     background-size: cover;
-    background-position: center;
-            .splash_header {
-                text-transform: uppercase;
-                font-weight: 900;
-                color: rgb(31, 38, 65);
-                font-size: 300%;
-                width: 50%;
-            }
-}
-
-.splash_description {
-    padding: 2vw 0 2vw 0;
-    line-height: 20pt;
-}
-
-.splash .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20vw;
-    padding-bottom: 20vw;
-    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+        .splash_header {
+            text-transform: uppercase;
+            font-weight: 900;
+            color: rgb(31, 38, 65);
+            font-size: 3.2rem;
+            line-height: 1.3;
+            letter-spacing: 5px;
+            width: 60%;
+        }
+        .splash_description {
+            padding: 20px 0 35px 0;
+            line-height: 1.6;
+            font-weight: 400;
+            font-size: .9rem;
+        }
         a {
-            width: 200px;
+            width: 220px;
             height: 40px;
             background-color: rgb(134, 188, 66);
                 p {
                     position: relative;
                     top: 50%;
                     transform: translateY(-50%);
+                    font-weight: 400;
+                    font-size: .9rem;
+                    color: #ffffff;
+                    text-transform: uppercase;
                 }
         }
+}
+
+.splash .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14.8vw;
+    padding-bottom: 15.2vw;
+    text-align: center;
+}
+
+@media (max-width: 810px) {
+    .splash .splash_header {
+        font-size: 2.2rem;
+        width: 100%;
+    }
+
+    .splash .wrapper {
+         padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
 }
 

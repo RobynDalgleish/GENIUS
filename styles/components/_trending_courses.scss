@@ -2,24 +2,67 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10% 0 0 0;
         p {
-            font-family: Raleway;
             color:#222222;
-            font-size: 1.122rem;
             font-weight: 400;
+            font-size: .8rem;
             line-height: 1.337;
             text-align: center;
-            text-transform: uppercase;
+            text-transform: uppercase;   
         }
         h2 {
-            font-family: Raleway;
             color:#222222;
-            font-size: 2.242rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            line-height: 0.669;
+            line-height: 1;
             text-align: center;
-            padding: 10px 0 30px 0;
+            padding: 10px 0 15px 0;
             text-transform: uppercase;
         }
     }
 
+    .trending_nav  ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+            li {
+                padding: 30px 15px 30px 15px;
+                transition: all .3s;
+            }
+            li:hover {
+                color: rgb(113, 199, 59)
+            }
+    }
+
+.courses > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    flex-basis: calc(25% - 15px);
+    margin: 10px;
+        img {
+            display: block;
+            max-width: 100%;
+        }
+}
+
+.course:first-of-type, .course:nth-of-type(5) {
+    margin-left: 0;
+}
+
+.course:nth-of-type(4), .course:last-of-type {
+    margin-right: 0;
+}
+
+    @media (max-width: 810px) {
+        .section_title {
+            padding: 10vw 0 10vw 0;
+                h2 {
+                    padding: 0 0 5vw 0;
+                }
+        }
+        
+    }

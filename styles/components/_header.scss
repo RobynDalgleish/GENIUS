@@ -1,25 +1,13 @@
 
-
-// for responsive typography
-// $type: calc(1.6rem + (3 - 1.6) * ((100vw - 300px) / (1600 - 300)));
-
+// TOP HALF BEGINS
 .header_top {
     background: rgb(34, 34, 33);
-}
-
-.header_top .wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-        .header_top_genius_logo {
-            width: 30%;
-            text-align: center;
-            padding: 10px 0 8px 0;
-                .header_top_genius_logo_image {
-                    height: 30px;
-                }
-        }
+        .wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
 }
 
 .header_top_contact {
@@ -28,11 +16,11 @@
     font-weight: 100;
     font-size: .6rem;
     width: 35%;
+    display: flex;
         .header_top_contact_items {
             display: flex;
             flex-direction: row;
-            align-items: center;
-                .header_top_contact_item{
+                .header_top_contact_item:not(:last-of-type) {
                     padding-right: 40px;
                 }
         }
@@ -42,8 +30,17 @@
     margin-right: 10px;
 }
 
+.header_top_genius_logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 8px 0;
+        .header_top_genius_logo_image {
+            height: 30px;
+        }
+}
+
 .header_top_enter {
-    font-family: Raleway;
     color: #F9F9F9;
     font-weight: 100;
     font-size: .6rem;
@@ -51,13 +48,20 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
     width: 35%;
          div {
             padding: 0 20px 0 20px;
          }
+         a{
+            transition: all .3s;
+         }
+         a:hover {
+            color: rgb(113, 199, 59);
+         }
 }
+// TOP HALF ENDS
 
+// BOTTOM HALF BEGINS
 .header_nav > .header_nav_items {
     display: flex;
     flex-direction: row;
@@ -72,7 +76,48 @@
         }
 }
 
-// drop-down search field begins
+.header_bottom {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
+    position: relative;
+    z-index: 100;
+}
+// BOTTOM HALF ENDS
+
+// // HAMBURGER NAV BEGINS
+// .overlay.header_nav {
+// 	display: block;
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	background: rgba(0,0,0,0.99);
+// 	color: white;
+// }
+
+// .overlay ul {
+// 	flex-direction: column;
+// }
+// .overlay ul a {
+// 	font-size: 50px;
+// 	text-align: center;
+// 	width: 100%;
+// 	padding: 30px;
+// }
+
+// .overlay .hamburger {
+// 	display: block;
+// 	font-size: 50px;
+// 	text-align: center;
+// }
+
+.hamburger {
+	display: none;
+}
+// // HAMBURGER NAV ENDS
+
+
+// DROP-DOWN SEARCH FIELD BEGINS
 input[type=checkbox]{
     display: none;
 }
@@ -88,14 +133,47 @@ input[type=checkbox]:checked ~ ul {
 li {
       list-style: none;
 }
-// drop-down search field ends
+// DROP-DOWN SEARCH FIELD ENDS
 
-.header_bottom {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.35);
-    position: relative;
-    z-index: 100;
-}
+// MEDIA QUERIES
+/* Media Query for hamburger nav */
+// @media all and (max-width: 850px) {
+// 	.hamburger {
+// 		display: block;
+// 		font-size: 25px;
+// 	}
 
-.search_ul:active {
-    width: 100%;
+// 	.header_nav ul {
+// 		display: none;
+// 	}
+	
+// 	.header_nav ul.show {
+// 		display: flex;
+//      flex-direction: column;
+// 	}
+
+// }
+
+@media (max-width: 810px){
+    .header_top .wrapper {
+        flex-direction: column;
+    }
+
+    .header_top_contact, .header_top_enter {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+    }
+
+    .header_top_genius_logo .header_top_genius_logo_image {
+        height: 40px;
+    }
+
+    .header_nav > .header_nav_items {
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+    }
+
+    
 }
