@@ -2,26 +2,33 @@
 // TOP HALF BEGINS
 .header_top {
     background: rgb(34, 34, 33);
-        .wrapper {
+    min-height: 81px;
+        .header_wrapper {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
+                max-width: 1208px;
+                margin: 0 auto;
+                padding: 21px 20px 21px 20px;  
             }
 }
 
 .header_top_contact {
     font-family: Montserrat;
     color: #F9F9F9;
-    font-weight: 100;
-    font-size: .6rem;
-    width: 35%;
+    font-weight: 300;
+    font-size: .75rem;
     display: flex;
+    font-size: .75rem;
+    font-weight: 300;
+    width: 40%;
+
         .header_top_contact_items {
             display: flex;
             flex-direction: row;
                 .header_top_contact_item:not(:last-of-type) {
-                    padding-right: 40px;
+                    padding-right: 44px;
                 }
         }
 }
@@ -31,24 +38,24 @@
 }
 
 .header_top_genius_logo {
-    width: 30%;
     display: flex;
     justify-content: center;
-    padding: 10px 0 8px 0;
+    width: 20%;
         .header_top_genius_logo_image {
-            height: 30px;
+            height: 38px;
+            width: 139;
         }
 }
 
 .header_top_enter {
     color: #F9F9F9;
-    font-weight: 100;
-    font-size: .6rem;
+    font-weight: 300;
+    font-size: .75rem;
     text-transform: capitalize;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 35%;
+     width: 40%;
          div {
             padding: 0 20px 0 20px;
          }
@@ -62,17 +69,21 @@
 // TOP HALF ENDS
 
 // BOTTOM HALF BEGINS
-.header_nav > .header_nav_items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size:.7rem;
-    text-transform: uppercase;
-    font-family: Raleway;
-    color:#212121;
-    font-weight: 700;
-        li {
-            padding: 20px 15px 20px 15px;
+.header_nav {
+    padding: 28px 0 28px 0;
+        > .header_nav_items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-size:.875rem;
+            text-transform: uppercase;
+            font-family: Raleway;
+            color:#212121;
+            font-weight: 700;
+            line-height: 1.714;
+                li {
+                    padding: 0 15px 0 15px;
+                }
         }
 }
 
@@ -154,7 +165,7 @@ li {
 
 // }
 
-@media (max-width: 810px){
+@media (max-width: 800px){
     .header_top .wrapper {
         flex-direction: column;
     }
@@ -169,11 +180,24 @@ li {
         height: 40px;
     }
 
-    .header_nav > .header_nav_items {
-        flex-direction: column;
-        align-items: center;
-        z-index: 100;
-    }
+    .header_nav {
+        padding: 0;
+            > .header_nav_items {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                z-index: 100;
+                    li:not(:last-of-type) {
+                        width: 90%;
+                        border-bottom: 1px solid rgb(34, 34, 33);
+                    }
+            }
+    } 
+}
 
-    
+// MEDIA QUERIES BEGIN
+@media (max-width: 300px) {
+    .header_top_contact .header_top_contact_items .header_top_contact_item:not(:last-of-type) {
+                    padding-right: 30px;
+    }
 }

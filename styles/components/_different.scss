@@ -1,20 +1,26 @@
+.different_section {
+    background-color: rgb(244, 246, 250);
+    position: relative;
+    z-index: -5;
+}
+
 .differences {
     display: flex;
     flex-direction: row;
         div {
-            padding-left: 45px;
+            padding-left: 55px;
             position: relative;
             padding-top: 30px;
-                &:before {
-                    content: "";
-                    height: 20px;
-                    width: 20px;
-                    background-image: url(../assets/icon.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    position: absolute;
-                    left: 10px;
-                }
+            &:before {
+                content: "";
+                height: 39px;
+                width: 39px;
+                background-image: url(../assets/icon.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 10px;
+            }
                 &:nth-child(2):before {
                     background-image: url(../assets/test-tube.png)
                 }
@@ -23,26 +29,52 @@
                 }
                 &:after {
                     content: "";
-                    height: 140px;
-                    width: 140px;
+                    height: 207px;
+                    width: 207px;
                     background-color: rgb(250, 251, 253);
                     position: absolute;
-                    left: 0;
-                    top: 0;
+                    left: -20px;
+                    top: -20px;
                     border-radius: 50%;
-                    z-index: -100;
+                    z-index:-1;
                 }
                 
         }
 }
 
-@media (max-width: 810px){
+.differences h3 {
+    color:#222222;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    padding-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.differences p {
+    color:
+    #222222;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.714;
+    text-align: left;
+}
+
+
+@media (max-width: 820px){
     .differences {
         flex-direction: column;
             div {
                 margin-bottom: 40px;
                 min-height: 140px;
+                &:after {
+                    height: 100px;
+                    width: 100px;
+                    top:0;
+                    left:0;
+                }
             }
     }
+
 }
 

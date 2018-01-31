@@ -1,3 +1,27 @@
+footer {
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+        .footer_bottom {
+            background-color: rgb(17, 17, 17);
+                .wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
+        }
+}
+
+.footer_bottom ul, .legal {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
 .footer_wrapper {
     display: flex;
     flex-direction: row;
@@ -9,16 +33,22 @@
     font-size: 0.875rem;
 }
 
-.footer_courses li {
-    padding-left: 20px;
-    position: relative;
-        &:before {
-            font-family: FontAwesome;
-            color:#86bc42;
-            font-size: 0.875rem;
-            font-weight: 400;
-            content: "\f054";
-            position: absolute;
-            left: 10px;
+.footer_courses {
+    svg {
+        margin-right: 10px;
+        display: none;
+        position: absolute;
+        left: 0;
         }
+    li {
+        transition: all .3s;
+        position: relative;
+    }
+    li:hover {
+        padding-left: 10px;
+    }
+    li:hover svg{
+        display: inline-block;
+        }
+            
 }

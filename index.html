@@ -19,11 +19,11 @@
     <header>
 
         <section class="header_top">
-            <div class="wrapper">
+            <div class="header_wrapper">
 
                 <div class="header_top_contact">
                     <ul class="header_top_contact_items">
-                        <!-- are before/after elements or styled list bullets better than icons to use below? should the icons be described for accessibility? Should there be a p tag after the icon? -->
+                        <!-- are before/after elements or styled list bullets better than icons to use below? (I did that in other parts of the site, aka footer.) Should the icons be described for accessibility? Should there be a p tag after the icon? -->
                         <li class="header_top_contact_item"><a href="tel:+1-541-754-3031"><i class="fas fa-phone" data-fa-transform="rotate-90" style="color:rgb(113, 199, 59)"></i>(541) 754-3010</a></li>
                         <li class="header_top_contact_item"><a href="mailto:contact@com.vn"><i class="far fa-envelope" style="color:rgb(113, 199, 59)"></i>contact@com.vn</a></li>
                     </ul>
@@ -34,7 +34,7 @@
                 <div class="header_top_enter">
                     <!-- would a buttom be more accessible for the two a tags below? -->
                     <a href="">register</a>
-                    <!-- use a before/after element to make the virtical line here a:after{content: |;} -->
+                    <!-- use a before/after element to make the virtical line here instead of the div: a:after{content: |;} -->
                     <div>|</div>
                     <a href="">login</a>
                 </div>
@@ -43,7 +43,7 @@
         </section>
 
         <section class="header_bottom">
-            <div class="wrapper">
+            <div class="header_wrapper">
 
                 <nav class="header_nav">
                     <p class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></p>
@@ -88,7 +88,7 @@
 <!-- SPLASH SECTION ENDS -->
 
 <!-- TRENDING COURSES BEGINS -->
-        <section>
+        <section class="courses_section">
             <div class="wrapper">
 
                 <div class="section_title">
@@ -121,18 +121,17 @@
                                     <!-- below h5 tags can neither be uppercase or capitalize in css. So write it as is? -->
                                     <h3>Course in Expert bartender and modern cocktail</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>clive bradley</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -144,18 +143,17 @@
                                 <figcaption>
                                     <h3>Fashion Styling and Photography course</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>cedric chapman</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -167,18 +165,17 @@
                                 <figcaption>
                                     <h3>Management Developpment Program</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>chad cecil</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -190,18 +187,17 @@
                                 <figcaption>
                                     <h3>Learn English with websites</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>henry cary</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -213,18 +209,17 @@
                                 <figcaption>
                                     <h3>Digital Graphic Design Fundamentals</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>bowen brent</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -236,18 +231,17 @@
                                 <figcaption>
                                     <h3>Fashion &amp; Luxury Goods Management Course</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>bruce axel</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -259,18 +253,17 @@
                                 <figcaption>
                                     <h3>Write Professional Emails in English</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>arvel baird</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -282,18 +275,17 @@
                                 <figcaption>
                                     <h3>Master Class - Digital Acceleration Course</h3>
                                     <div>
-                                        <div class="course_instructor_photo"></div>
                                         <div class="course_instructor">
                                             <p>aubrey austin</p>
                                             <a href="">view profile</a>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="course_users">
                                         <ul>
                                             <li><a><i class="fas fa-users" style="color:rgb(102, 102, 102)"></i>75</a></li>
                                             <li><a><i class="fas fa-comments" style="color:rgb(102, 102, 102)"></i>24</a></li>
                                         </ul>
-                                        <p class="courses_cost">free</p>
+                                        <p class="course_cost">free</p>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -307,7 +299,7 @@
 <!-- TRENDING COURSES ENDS -->
 
 <!-- PHOTO GALLERY BEGINS -->
-        <section>
+        <section class="gallery_section">
             <div class="wrapper">
 
                 <div class="section_title">
@@ -322,41 +314,41 @@
                 <div class="photo_gallery">
                     <ul>
                         <li>
-                            <figure>
+                            <!-- <figure> -->
                                 <img src="assets/bench-accounting-49027.jpg" alt="">
                                 <!-- is it semantically correct to have a + in the figcaption? -->
-                                <figcaption>+</figcaption>
-                            </figure>
+                                <div><p>+</p></div>
+                            <!-- </figure> -->
                         </li>
                         <li>
-                            <figure>
+                            <!-- <figure> -->
                                 <img src="assets/kai-oberhauser-309715.jpg" alt="">
-                                <figcaption>+</figcaption>
-                            </figure>
+                                <div><p>+</p></div>
+                            <!-- </figure> -->
                         </li>
                         <li>
-                            <figure>
+                            <!-- <figure> -->
                                 <img src="assets/kari-shea-199320.jpg" alt="">
-                                <figcaption>+</figcaption>
-                            </figure>
+                                <div><p>+</p></div>
+                            <!-- </figure> -->
                         </li>
                         <li>
-                            <figure>
+                            <!-- <figure> -->
                                 <img src="assets/michal-grosicki-366026.jpg" alt="">
-                                <figcaption>+</figcaption>
-                            </figure>
+                                <div><p>+</p></div>
+                            <!-- </figure> -->
                         </li>
                         <li>
-                            <figure>
+                            <!-- <figure> -->
                                 <img src="assets/gabriel-beaudry-253365.jpg" alt="">
-                                <figcaption>+</figcaption>
-                            </figure>
+                                <div><p>+</p></div>
+                            <!-- </figure> -->
                         </li>
                         <li>
-                            <figure>
+                            <!-- <figure> -->
                                 <img src="assets/tim-gouw-69753.jpg" alt="">
-                                <figcaption>+</figcaption>
-                            </figure>
+                                <div><p>+</p></div>
+                            <!-- </figure> -->
                         </li>
                     </ul>
                 </div>
@@ -366,7 +358,7 @@
 <!-- PHOTO GALLERY ENDS -->
 
 <!-- NEWS BEGINS -->
-        <section>
+        <section class="news">
             <div class="wrapper">
                 
                 <div class="section_title">
@@ -379,13 +371,14 @@
 
                 <article>
                     <img src="assets/aleks-dorohovich-26.jpg" alt="">
-                    <div>
+                    <div class="news_article_details">
                         <h3>Course in Digital Photography and Photoshop</h3>
-                        <div>
+                        <div class="admin_date">
                             <p>by admin</p>
+                            <div>|</div>
                             <time datetime="2017-10-11">Oct 11, 2017</time>
                         </div>
-                        <div>
+                        <div class="news_users">
                             <a><i class="fas fa-user" style="color:rgb(102, 102, 102)"></i>703</a>
                             <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
                         </div>
@@ -396,13 +389,14 @@
 
                 <article>
                     <img src="assets/christelle-bourgeois-97331.jpg" alt="">
-                    <div>
+                    <div class="news_article_details">
                         <h3>Short Courses in Marketing</h3>
-                        <div>
+                        <div class="admin_date">
                             <p>by admin</p>
+                            <div>|</div>
                             <time datetime="2017-10-11">Oct 11, 2017</time>
                         </div>
-                        <div>
+                        <div class="news_users">
                             <a><i class="fas fa-user" style="color:rgb(102, 102, 102)"></i>703</a>
                             <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
                         </div>
@@ -413,13 +407,14 @@
 
                 <article>
                     <img src="assets/jessy-smith-500353.jpg" alt="">
-                    <div>
+                    <div class="news_article_details">
                         <h3>Award in Education and Training</h3>
-                        <div>
+                        <div class="admin_date">
                             <p>by admin</p>
+                            <div>|</div>
                             <time datetime="2017-10-11">Oct 11, 2017</time>
                         </div>
-                        <div>
+                        <div class="news_users">
                             <a><i class="fas fa-user" style="color:rgb(102, 102, 102)"></i>703</a>
                             <a><i class="far fa-comments" style="color:rgb(102, 102, 102)"></i>0</a>
                         </div>
@@ -433,7 +428,7 @@
 <!-- NEWS ENDS -->
 
 <!-- WHAT MAKES US DIFFERENT BEGINS -->
-        <section>
+        <section class="different_section">
             <div class="wrapper">
                 <div class="section_title">
                     <p>Lorem ipsum dolor</p>
@@ -447,17 +442,15 @@
                 <div class="differences">
                     <div>
                         <h3>concept</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit quo similique hic?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur ipsa iusto sequi ea itaque sed ullam a doloremque.</p>
                     </div>
                     <div>
                         <h3>experience</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit
-                        quo similique hic?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magni ipsa officia possimus molestiae aliquam laboriosam.</p>
                     </div>
                     <div>
                         <h3>design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem fugit, dolore facere voluptates animi quaerat odit
-                        quo similique hic?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum exercitationem ipsa corrupti voluptas voluptatibus saepe, dolorem aspernatur expedita modi.</p>
                     </div>
                  </div>
             </div>
@@ -475,64 +468,66 @@
                     </div>
                 </div>
             <!-- use before element for the $s below -->
-                <div>
-                    <div>
-                        <p>0</p>
+                <div class="plans">
+                    <div class="plan">
+                        <div class="price">
+                            <p>0</p>
+                        </div>
+                        <h3>trial</h3>
+                        <p>30 days free trial</p>
+                        <div class="plan_details">
+                            <ul>
+                                <li>one day free trial</li>
+                                <li>limited courses</li>
+                                <li>free 3 lessons</li>
+                                <li>no supporter</li>
+                                <li>no ebook</li>
+                                <li>no tutorial</li>
+                                <li>limited registered user</li>
+                            </ul>
+                        </div>
+                        <a href="">choose plan</a>
                     </div>
-                    <h3>trial</h3>
-                    <p>30 days free trial</p>
-                    <div>
-                        <ul>
-                            <li>one day free trial</li>
-                            <li>limited courses</li>
-                            <li>free 3 lessons</li>
-                            <li>no supporter</li>
-                            <li>no ebook</li>
-                            <li>no tutorial</li>
-                            <li>limited registered user</li>
-                        </ul>
-                    </div>
-                    <a href="">choose plan</a>
-                </div>
 
-                <div>
-                    <div>
-                        <p>55</p>
+                    <div class="plan">
+                        <div class="price">
+                            <p>55</p>
+                        </div>
+                        <h3>trial</h3>
+                        <p>30 days free trial</p>
+                        <div class="plan_details">
+                            <ul>
+                                <li>one day standard access</li>
+                                <li>limited courses</li>
+                                <li>300+ lessons</li>
+                                <li>random supporter</li>
+                                <li>view only ebook</li>
+                                <li>standard tutorials</li>
+                                <li>unlimited registered user</li>
+                            </ul>
+                        </div>
+                        <a href="">choose plan</a>
                     </div>
-                    <h3>trial</h3>
-                    <p>30 days free trial</p>
-                    <div>
-                        <ul>
-                            <li>one day standard access</li>
-                            <li>limited courses</li>
-                            <li>300+ lessons</li>
-                            <li>random supporter</li>
-                            <li>view only ebook</li>
-                            <li>standard tutorials</li>
-                            <li>unlimited registered user</li>
-                        </ul>
-                    </div>
-                    <a href="">choose plan</a>
-                </div>
 
-                <div>
-                    <div>
-                        <p>55</p>
+                    <div class="plan">
+                        <div class="price">
+                            <p>55</p>
+                        </div>
+                        <h3>trial</h3>
+                        <p>30 days free trial</p>
+                        <div class="plan_details">
+                            <ul>
+                                <li>lifetime access</li>
+                                <li>unlimited all courses</li>
+                                <li>3000+ lessons and growing</li>
+                                <li>free supporter</li>
+                                <li>free ebook downloads</li>
+                                <li>premium tutorials</li>
+                                <li>unlimited registered user</li>
+                            </ul>
+                        </div>
+                        <a href="">choose plan</a>
                     </div>
-                    <h3>trial</h3>
-                    <p>30 days free trial</p>
-                    <div>
-                        <ul>
-                            <li>lifetime access</li>
-                            <li>unlimited all courses</li>
-                            <li>3000+ lessons and growing</li>
-                            <li>free supporter</li>
-                            <li>free ebook downloads</li>
-                            <li>premium tutorials</li>
-                            <li>unlimited registered user</li>
-                        </ul>
-                    </div>
-                    <a href="">choose plan</a>
                 </div>
             </div>
         </section>
@@ -542,7 +537,7 @@
 <!-- FOOTER BEGINS -->
     <footer>
         <section>
-            <div class="wrapper footer_wrapper">
+            <div class="footer_wrapper">
                 <div class="footer_items">
                     <h2>
                         <img src="logoFull.png" alt="the GENIUS logo">
@@ -558,20 +553,20 @@
                 <div class="footer_items">
                     <h2>courses</h2>
                     <ul class="footer_courses">
-                        <li><a>courses</a></li>
-                        <li><a>events</a></li>
-                        <li><a>gallery</a></li>
-                        <li><a>FAQs</a></li>
-                        <li><a>blog</a></li>
-                        <li><a>contact</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>courses</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>events</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>gallery</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>FAQs</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>blog</a></li>
+                        <li><a><i class="fas fa-angle-right" style="color:rgb(113, 199, 59)"></i>contact</a></li>
                     </ul>
                 </div>
                 <div class="footer_items">
                     <h2>contact us</h2>
                     <ul>
                         <li><a href=""><i class="fas fa-map-marker-alt" style="color:rgb(113, 199, 59)"></i>Hawkins DDR 837</a></li>
-                        <li><a href=""><i class="fas fa-map-marker-alt" style="color:rgb(113, 199, 59)"></i>Drake APA 159</a></li>
-                        <li><a href=""><i class="fas fa-map-marker-alt" style="color:rgb(113, 199, 59)"></i>Yosemite AD 19</a></li>
+                        <li><a href="">Drake APA 159</a></li>
+                        <li><a href="">Yosemite AD 19</a></li>
                     </ul>
                     <ul>
                         <li><a href="tel:+1-817-929-3756"><i class="fas fa-phone-square" data-fa-transform="rotate-90" style="color:rgb(113, 199, 59)"></i>817 929 3756</a></li>
@@ -589,7 +584,7 @@
                         </button>
                     </form>
                     <p>we respect your privacy</p>
-                    <nav>
+                    <nav class="footer_nav">
                         <ul>
                             <li><a href=""><i class="fab fa-facebook-square" style="color:rgb(59, 89, 152)"></i><span class="visuallyhidden">facebook</span></a></li>
                             <li><a href=""><i class="fab fa-twitter-square" style="color: rgb(2, 170, 240)"></i><span class="visuallyhidden">twitter</span></a></li>
@@ -600,8 +595,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="wrapper">
+        <section class="footer_bottom">
+            <div class="footer_wrapper">
                 <nav>
                     <ul>
                         <li>home</li>
@@ -611,7 +606,7 @@
                         <li>events</li>
                     </ul>
                 </nav>
-                <div>
+                <div class="legal">
                     <p>copyright</p>
                     <p>&copy;2017</p>
                 </div>

@@ -1,0 +1,60 @@
+.plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+        .plan {
+            text-align: center;
+            flex-basis: 32%;
+            background-color: rgb(240, 242, 247);
+            padding: 50px 10px 20px 10px;
+            position: relative;
+            transition: all .3s;
+            &:hover{
+                background-color: rgb(134, 188, 66);
+            }
+                h3 {
+                    color:#444444;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    line-height: 2;
+                    text-transform: uppercase;
+                }
+                a {
+                    color:#ffffff;
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    line-height: 1.714;
+                    text-transform: uppercase;
+                    display: block;
+                    padding-top: 20px;
+                }
+                .price {
+                    position: absolute;
+                    top: -80px;
+                    right: calc(50% - 60px);
+                    height: 120px;
+                    width: 120px;
+                    border-radius: 50%;
+                    border: 5px solid #ffffff;
+                    background-color: rgb(240, 242, 247);
+                    display: flex;
+                }
+                .plan_details {
+                    background-color: #ffffff;
+                    color: #444444;
+                    font-size: 0.875rem;
+                    font-weight: 300;
+                    line-height: 3.429;
+                    padding: 25px 0 25px 0;
+                    text-transform: capitalize;
+                }
+                p {
+                    margin: auto;
+                    padding-bottom: 30px;
+                }
+        }
+}
+
+
+
